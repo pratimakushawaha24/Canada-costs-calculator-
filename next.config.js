@@ -2,7 +2,6 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-  regions: ['yul1'], // Montreal, Canada
   images: {
     domains: [],
   },
