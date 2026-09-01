@@ -69,7 +69,7 @@ export interface CityDefinition {
   description: string;
   population?: number;
   costOfLivingIndex?: number;
-  popularServices?: string[]; // slugs of services
+  popularServices?: string[];
   featuredCalculators?: string[];
   seo: SEOData;
 }
@@ -78,7 +78,7 @@ export interface GuideArticle {
   slug: string;
   title: string;
   excerpt: string;
-  content: string; // HTML or Markdown
+  content: string;
   featuredImage?: string;
   author: string;
   publishDate: string;
@@ -90,4 +90,4 @@ export interface GuideArticle {
   relatedGuides?: string[];
   relatedCities?: string[];
   seo: SEOData;
-    }
+}
