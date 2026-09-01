@@ -26,7 +26,6 @@ export default function CityServicePage({ params }: { params: { city: string; se
   const service = getServiceBySlug(params.service);
   if (!city || !service) notFound();
 
-  // Combine data
   const title = `${service.name} in ${city.name}`;
   const description = `Average costs and factors for ${service.name} in ${city.name}, ${city.province}.`;
 
@@ -82,7 +81,6 @@ export default function CityServicePage({ params }: { params: { city: string; se
   );
 }
 
-// Metadata
 export async function generateMetadata({ params }: { params: { city: string; service: string } }): Promise<Metadata> {
   const city = getCityBySlug(params.city);
   const service = getServiceBySlug(params.service);
